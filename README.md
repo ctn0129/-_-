@@ -52,9 +52,3 @@ install.packages(c("MASS", "mvtnorm", "truncnorm", "coda", "mcmcse"))
 | `preset_burnin` | 若指定正整數，則跳過動態收斂搜尋，直接使用固定 burn-in |
 | `data_seed` | 控制 CV 切分、chain 初始化與正式抽樣的隨機種子 |
 
-## 執行
-
-執行後會依序印出：CV 各 `b_sq` 之平均 ACC → 選定的 `b_sq` → 收斂後的 burn-in 步數 → 選中變數（M 個）→ 各變數後驗選入機率表（僅列出 > 0.05 者）→ 訓練/測試集 ACC 與混淆矩陣。
-
-3. 若需重新評估先驗變異數，將 `b_sq` 設回 `NULL` 並調整 `b_sq_grid`
-本程式碼實作貝氏受限群組變數選擇之有序 Probit 迴歸模型，應用於 PKD（DAT-SPECT 巴金森氏症）資料集

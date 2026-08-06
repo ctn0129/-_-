@@ -1,4 +1,4 @@
-# PKD Real Data 分析程式說明
+# PKD Real Data 程式說明
 
 貝氏約束群組變數選擇於有序 Probit 迴歸模型，套用於 DAT-SPECT Parkinson's disease 資料集。
 
